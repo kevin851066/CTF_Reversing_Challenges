@@ -1,0 +1,10 @@
+
+def asm2(ebpPlus0x8, ebpMinus0x4):
+    while ebpPlus0x8 <= 0x9886:
+        ebpPlus0x8 += 0x41
+        ebpMinus0x4 += 0x1
+
+    print(hex(ebpMinus0x4))
+
+if __name__ == "__main__":
+    asm2(0xe, 0x21)    
